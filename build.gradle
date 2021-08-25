@@ -1,0 +1,21 @@
+apply plugin: 'application'
+
+mainClassName = 'P2PChat'
+
+repositories {
+    mavenCentral()
+}
+
+task p2p(type: JavaExec) {
+    description 'p2p communication app'
+
+    classpath = sourceSets.main.runtimeClasspath
+
+    main = 'P2P'
+
+    standardInput = System.in
+
+    if(project.hasProperty("temp")) {
+        args(project.getProperty('temp'))
+    }
+}

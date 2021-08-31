@@ -6,6 +6,10 @@ public class P2P {
     
     
     public static void main(String[] args){
-        System.out.println("hey");
+        
+        for(int i = 0; i < 3; i++){
+            
+        }
+
     }//end main
 }//end class

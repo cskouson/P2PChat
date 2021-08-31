@@ -19,3 +19,19 @@ task p2p(type: JavaExec) {
         args(project.getProperty('temp'))
     }
 }
+
+task client(type: JavaExec){
+    classpath = sourceSets.main.runtimeClasspath
+
+    main = 'TCPReview.Client'
+
+    standardInput = System.in
+}
+
+task server(type: JavaExec){
+    classpath = sourceSets.main.runtimeClasspath
+
+    main = 'TCPReview.Server'
+
+    standardInput = System.in
+}

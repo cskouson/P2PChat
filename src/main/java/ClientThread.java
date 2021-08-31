@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 import java.util.ArrayList;
 
-public class ClientThread implements Runnable {
+public class ClientThread {
     protected int id;
 
     public ClientThread(){

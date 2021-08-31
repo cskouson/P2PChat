@@ -13,11 +13,21 @@ import java.util.Set;
 import java.util.ArrayList;
 
 public class ServerThread implements Runnable {
-    protected ServerSocket;
-    protected int id;
+    protected ServerSocket ss;
+    int id;
+    int delay; //temp
+    int port;
+    
 
-    public ServerThread(id){
-        this.id = id
+    public ServerThread(int id, int delay, int port){
+        this.id = id;
+        this.delay = delay;
+        this.port = port;
+    }
+
+
+    public void run() {
+        
     }
 
 
